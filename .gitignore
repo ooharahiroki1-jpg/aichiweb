@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-temp/
+.test-tmp/
+.ruff_cache/
+.venv/
+.test-deps/
+dist/
+build/
+*.egg-info/
+
+# Generated delivery artifacts. PDFs are built only in GitHub Actions.
+site/
+.delivery/
+*.pdf
+!parallax/reports/*.pdf
+
