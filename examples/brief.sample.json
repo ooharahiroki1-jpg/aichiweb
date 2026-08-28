@@ -1,0 +1,144 @@
+{
+  "$schema": "../schema/brief.schema.json",
+  "date": "2026-08-29",
+  "language": "ja-JP",
+  "report_title": "7AM PARALLAX｜朝の知的遠征",
+  "deck": "いま起きている変化、時代を越える問い、そしてAIが社会へ投げかける難題を、三つの異なるレンズで読み解く。",
+  "theme_a": {
+    "id": "A",
+    "kind": "now",
+    "title": "都市の暑さは、誰の時間を奪っているのか",
+    "subtitle": "気温の平均値では見えない、移動・労働・休息の格差を読む",
+    "abstract": "猛暑は全員に同じ温度として届くわけではない。緑地、住宅性能、移動手段、仕事の裁量によって、暑さにさらされる時間と回復に使える時間が変わる。都市を気温の地図ではなく時間配分の地図として捉えると、対策の優先順位も変わって見える。",
+    "visual": {
+      "title": "暑熱リスクをつくる三つの時間",
+      "caption": "同じ最高気温でも、曝露・回復・選択の時間が異なれば負担は大きく変わる。",
+      "nodes": [
+        {"label": "EXPOSURE", "value": "曝露時間", "detail": "屋外労働や徒歩移動で熱に接する長さ"},
+        {"label": "RECOVERY", "value": "回復時間", "detail": "冷房、睡眠、緑陰へアクセスできる長さ"},
+        {"label": "CONTROL", "value": "選択可能性", "detail": "予定や働き方を本人が変更できる余地"}
+      ]
+    },
+    "key_points": [
+      "平均気温だけでなく、個人が暑さへ曝露される時間を測る必要がある。",
+      "緑地や公共交通への投資は、健康政策であると同時に時間政策でもある。",
+      "対策評価では死亡数だけでなく、睡眠・移動・労働生産性の損失も見る。"
+    ],
+    "sections": [
+      {
+        "heading": "平均値から生活経路へ",
+        "body": "観測地点の気温は都市全体の傾向を示すが、一人ひとりが実際に通る道路、待つ駅、働く場所の熱環境までは表さない。生活経路に沿った曝露を考えることで、同じ地域内にも大きな差があることが分かり、日陰や給水地点を置く場所を具体化できる。",
+        "source_refs": ["who_heat", "ipcc_city"]
+      },
+      {
+        "heading": "適応策を時間の再配分として考える",
+        "body": "始業時刻の変更、休憩の義務化、夜間交通の確保は、設備投資とは異なる形で暑さへの曝露を減らす。個人の自己管理に任せず、危険な時間帯を制度的に短くする発想は、弱い立場の人ほど選択肢が少ないという問題に対応しやすい。",
+        "source_refs": ["who_heat", "ilo_heat"]
+      }
+    ],
+    "reflection_questions": [
+      "あなたの一日の中で、暑さを避ける選択ができない時間はどこにあるか。",
+      "都市の予算を気温低下ではなく回復時間の増加で評価すると、何が優先されるか。"
+    ],
+    "sources": [
+      {"id": "who_heat", "title": "Heat and health", "publisher": "World Health Organization", "url": "https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health"},
+      {"id": "ipcc_city", "title": "Climate Change 2022: Impacts, Adaptation and Vulnerability", "publisher": "IPCC", "published_at": "2022-02-28", "url": "https://www.ipcc.ch/report/ar6/wg2/"},
+      {"id": "ilo_heat", "title": "Working on a warmer planet", "publisher": "International Labour Organization", "published_at": "2019-07-01", "url": "https://www.ilo.org/publications/working-warmer-planet-effect-heat-stress-productivity-and-decent-work"}
+    ]
+  },
+  "theme_b": {
+    "id": "B",
+    "kind": "timeless",
+    "title": "知らないことを、どこまで恐れるべきか",
+    "subtitle": "不確実性と曖昧さを区別するエルズバーグの思考実験",
+    "abstract": "確率が分かっている賭けと、確率そのものが分からない賭けを前にすると、多くの人は後者を避ける。これは単なる臆病さではなく、情報の質に反応する判断ともいえる。曖昧さへの嫌悪を理解すれば、投資、医療、政策で『数字がある安心』に引き寄せられる理由を点検できる。",
+    "visual": {
+      "title": "リスクと曖昧さの違い",
+      "caption": "結果が不確実でも確率が既知ならリスク、確率の根拠まで不明なら曖昧さとなる。",
+      "nodes": [
+        {"label": "KNOWN", "value": "既知の確率", "detail": "結果は不明でも分布の前提を共有できる"},
+        {"label": "UNKNOWN", "value": "未知の確率", "detail": "データや生成過程の理解そのものが足りない"},
+        {"label": "CHOICE", "value": "判断", "detail": "数値の精密さと根拠の強さを分けて評価する"}
+      ]
+    },
+    "key_points": [
+      "リスクは確率が既知、曖昧さは確率の推定根拠そのものが不確かである。",
+      "人は期待値が同じでも、説明できない不確実性を強く避ける傾向がある。",
+      "精密な数字は、根拠の薄さを覆い隠す場合がある。"
+    ],
+    "sections": [
+      {
+        "heading": "壺の中の玉が示すもの",
+        "body": "エルズバーグの実験では、色の比率が分かる壺と分からない壺から玉を引く。多くの人が比率の分かる壺を選ぶため、主観確率と期待効用だけでは選択をきれいに説明できない。ここで問われるのは結果だけでなく、予測を支える知識への信頼である。",
+        "source_refs": ["ellsberg", "sep_decision"]
+      },
+      {
+        "heading": "未知を一つの数字へ潰さない",
+        "body": "意思決定では、最良推定値に加えて推定の幅、モデルが外れる条件、まだ観測できていない要因を併記するとよい。分からないことを曖昧なまま残すのは弱さではなく、あとで新しい証拠を取り込める判断構造を維持するための技術である。",
+        "source_refs": ["sep_decision", "nasa_uncertainty"]
+      }
+    ],
+    "reflection_questions": [
+      "確率が示されているだけで、根拠まで十分だと思い込んでいないか。",
+      "未知を明記した提案と、単一の数字で断言する提案のどちらを信頼するか。"
+    ],
+    "sources": [
+      {"id": "ellsberg", "title": "Risk, Ambiguity, and the Savage Axioms", "publisher": "The Quarterly Journal of Economics", "published_at": "1961-11-01", "url": "https://doi.org/10.2307/1884324"},
+      {"id": "sep_decision", "title": "Decision Theory", "publisher": "Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/decision-theory/"},
+      {"id": "nasa_uncertainty", "title": "NASA Systems Engineering Handbook", "publisher": "NASA", "published_at": "2016-12-01", "url": "https://www.nasa.gov/reference/systems-engineering-handbook/"}
+    ]
+  },
+  "theme_ai": {
+    "id": "AI",
+    "kind": "ai",
+    "title": "AI開発競争は、知能ではなく電力の競争になるのか",
+    "subtitle": "計算資源、資本、環境負荷、国家戦略を一枚の地図で捉える",
+    "abstract": "高性能なAIをめぐる競争は、アルゴリズムだけで決まらない。半導体、データセンター、電力網、資金調達、人材、規制が相互に制約し、誰がモデルを作り利用できるかを左右する。性能向上を善とみなす前に、その便益と費用を誰が引き受けるのかを問う必要がある。",
+    "angles": ["technology", "ethics", "philosophy", "economics", "development_competition", "environment"],
+    "visual": {
+      "title": "AI競争を制約する五つの資源",
+      "caption": "モデル性能だけを追うと、上流の集中と下流の社会的費用が見えなくなる。",
+      "nodes": [
+        {"label": "CHIPS", "value": "半導体", "detail": "製造能力と輸出管理が供給を左右する"},
+        {"label": "POWER", "value": "電力", "detail": "系統接続と発電構成が稼働上限を決める"},
+        {"label": "CAPITAL", "value": "資本", "detail": "巨額投資が参入者と研究方向を選別する"},
+        {"label": "TALENT", "value": "人材", "detail": "研究者の集中が知識と交渉力を偏らせる"},
+        {"label": "LEGITIMACY", "value": "正統性", "detail": "社会的受容と規制が展開速度を変える"}
+      ]
+    },
+    "key_points": [
+      "AI能力の拡大は、計算資源と電力を確保できる主体へ権力を集中させうる。",
+      "開発競争の速さと、安全性を検証する社会の時間は一致しない。",
+      "便益、環境負荷、雇用への影響を同じ会計の中で比較する必要がある。"
+    ],
+    "sections": [
+      {
+        "heading": "競争の単位をモデルから供給網へ広げる",
+        "body": "最先端モデルの競争を企業ランキングとして見ると、半導体製造、クラウド、電力契約、研究人材の集中を見落とす。供給網全体を分析単位にすると、国家の産業政策や輸出管理がモデルの設計選択にまで影響する構造が浮かぶ。",
+        "source_refs": ["hai_index", "iea_energy"]
+      },
+      {
+        "heading": "速さは誰の目的なのか",
+        "body": "企業にとって先行者利益が合理的でも、社会にとって同じ速度が望ましいとは限らない。安全性の検証、労働移行、教育、電力網の整備には別の時間が必要である。開発を止めるか進めるかの二択ではなく、領域ごとに速度を設計することが倫理的な争点になる。",
+        "source_refs": ["nist_rmf", "oecd_ai"]
+      },
+      {
+        "heading": "思考実験：計算資源を公共財として扱ったら",
+        "body": "もし大規模計算資源の一部を道路や図書館のような公共基盤とみなし、大学や中小企業へ配分したら何が変わるだろう。革新への参加者は増える一方、配分基準や監視権限を誰が持つかという新しい問題も生まれる。所有とアクセスを分けて考えるための思考実験である。",
+        "source_refs": ["hai_index", "oecd_ai"]
+      }
+    ],
+    "reflection_questions": [
+      "AIの性能向上で得る便益と、電力・水・雇用の費用は同じ主体に帰属しているか。",
+      "社会が安全性を検証できる速度を超えた開発競争に、どんな摩擦を設けるべきか。",
+      "計算資源へのアクセスは市場だけで配分すべきか、それとも公共性を持つか。"
+    ],
+    "sources": [
+      {"id": "hai_index", "title": "AI Index Report", "publisher": "Stanford Institute for Human-Centered AI", "url": "https://hai.stanford.edu/ai-index"},
+      {"id": "iea_energy", "title": "Energy and AI", "publisher": "International Energy Agency", "url": "https://www.iea.org/reports/energy-and-ai"},
+      {"id": "nist_rmf", "title": "AI Risk Management Framework", "publisher": "NIST", "published_at": "2023-01-26", "url": "https://www.nist.gov/itl/ai-risk-management-framework"},
+      {"id": "oecd_ai", "title": "OECD AI Principles", "publisher": "OECD", "url": "https://oecd.ai/en/ai-principles"}
+    ]
+  }
+}
+
