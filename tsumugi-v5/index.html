@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f3ea">
+<title>tsumugi｜岐阜の季節を味わうカフェ</title>
+<meta name="description" content="岐阜の旬野菜を使ったランチと、季節の果実を楽しむかき氷。自然に囲まれた空間で、やさしい時間を。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="site">
+  <header class="header">
+    <a class="brand" href="#top" aria-label="tsumugi トップへ">
+      <span class="script">tsumugi</span><small>SEASONAL CAFE<br>IN GIFU</small>
+    </a>
+    <button class="hamb" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <div>
+        <h1>今日の旬を、<br>選ぶ。</h1>
+        <p>めぐる季節の、いちばんおいしいを、<br>ここで。</p>
+      </div>
+      <div class="hand">きせつと、<br>ごはんと、<br>やさしい時間。<i></i></div>
+    </div>
+
+    <div class="season-nav" aria-label="季節を選ぶ">
+      <button data-season="0"><b>春</b><small>SPRING</small></button>
+      <button class="active" data-season="1"><b>夏</b><small>SUMMER</small></button>
+      <button data-season="2"><b>秋</b><small>AUTUMN</small></button>
+      <button data-season="3"><b>冬</b><small>WINTER</small></button>
+    </div>
+
+    <div class="carousel-shell">
+      <div class="carousel-stage" id="seasonCarousel" aria-live="polite">
+        <article class="season-card" data-card="0">
+          <img src="https://images.openai.com/static-rsc-4/agXGoOit_scQT1UlEfsqKDNQRwA5L2klMzZmNGfYyHsMDmyN-xOA5S9gQkKlPsUxpdCSXCxva2qpnUI2l9P9gPWBLFdEGAgiziMZTIu2OP8IuPJrgejtp5joQtT4V70qdMW2cL4BBhzHXDepU_XWkTTgSIm7Haz3UBY_MRI4v3860m5HaQ-7Hyj7C9dpDWXV?purpose=fullsize" alt="春の季節メニュー">
+          <div class="card-shade"></div><div class="card-copy"><strong>春</strong><span>はじまりの、<br>やさしい味。</span><em>SPRING PLATE</em></div>
+        </article>
+        <article class="season-card" data-card="1">
+          <img src="https://images.openai.com/static-rsc-4/qCmaFQE5Y0QwsjTwC2xPVjzhgjf79rKssVDVHb5YEYNR9mTMwKPVa-yEC7KA4wMtPEkWS5OKuvjrr-xrzw4RWxdbgcO8eo_DlCUlMjV6GLUO_9ileTRShN2l7qvVokBw4Bahht9xlwunMHt9ACvzXdBkQMxH7Mf_whklTzYVWT_9XJI8VVLl5XT5zWe74SLj?purpose=fullsize" alt="桃のかき氷">
+          <div class="card-shade"></div><div class="card-copy"><strong>夏</strong><span>太陽がくれた、<br>甘いごほうび。</span><em>PEACH KAKIGORI<br>IN SUMMER</em></div>
+        </article>
+        <article class="season-card" data-card="2">
+          <img src="https://images.openai.com/static-rsc-4/xqzUF8f9-SPqgrXRWlJzp72nlOEoYpIHgPjutGS1aMSNsdBuEIOtxCIdUx-BkolM2kQJEgktuYgLGmHmzpj4BNFpqhfqz51dRTktN5H6o3ptewbHOEeQ8FZGGFu25Y1VDYkjnzW9j1T6ri88GHhP2qeyHfRMEDHrW-NI_kb0IwmvpTNa8skh09MzxiQivZp5?purpose=fullsize" alt="秋の季節メニュー">
+          <div class="card-shade"></div><div class="card-copy"><strong>秋</strong><span>実りを、<br>いただく。</span><em>AUTUMN PLATE</em></div>
+        </article>
+        <article class="season-card" data-card="3">
+          <img src="https://images.openai.com/static-rsc-4/IzMpAj7VesNKWYW-ZYJzxNF914B7WkCgkdJW-ilpXMrxaoheaQi4vnGeX9Lr5PLfcxweH_0z1N7F3DVhkXeUrE1QiWSLJY3PEvhXkqrrJiZMrBHW-WlP9tDzpHOHXh-iUF0TArk56oZf2PtTXBwgislHrc8jyobPHYnkBzx165O_LZr8fFgesrNcwp34cmJg?purpose=fullsize" alt="冬の季節メニュー">
+          <div class="card-shade"></div><div class="card-copy"><strong>冬</strong><span>あたたかさに、<br>包まれて。</span><em>WINTER BOWL</em></div>
+        </article>
+        <button class="arrow prev" aria-label="前の季節">‹</button>
+        <button class="arrow next" aria-label="次の季節">›</button>
+      </div>
+      <div class="dots" aria-hidden="true"><span></span><span class="active"></span><span></span><span></span></div>
+    </div>
+
+    <div class="hero-cta">
+      <a class="pill primary" href="#reserve"><span>▣</span><b>WEB予約</b><span>→</span></a>
+      <a class="pill" href="#menu"><span>♜</span><b>季節のメニューを見る</b><span>→</span></a>
+    </div>
+  </section>
+
+  <section class="brand-band reveal">
+    <p>季節をあじわい、<br>人とつながり、<br>この場所で、やさしい時間を。</p>
+    <div class="brand-center"><div class="script">tsumugi</div><small>SEASONAL CAFE<br>IN GIFU</small></div>
+    <p>季節を食べることは、<br>この土地を味わうこと。<br>また、旬の季節に。</p>
+  </section>
+
+  <section class="landscape reveal" aria-label="岐阜の風景">
+    <img src="https://images.openai.com/static-rsc-4/GIhb-N3s2MbitkNpGmveChPnJmS13KmjOe0vfLPFo7DJomeiAoywVhiwo-lwn8tk98mCQt4kZ1zqVSs75Qerotq29_0pDrSAYSyEu0NZY55pBQ5mx5OA2sGmRMlvhmOIJhZG_K71ohquuMyqJZOZiNWB4uXUnio8qIwRJlu2MGE4JSSoWco88iHMXZnFU4D2?purpose=fullsize" alt="岐阜の山と川">
+    <div class="landscape-message">また、<br>ここで。<i></i></div>
+    <p>岐阜の豊かな自然の中で、<br>旬を味わうカフェ。<br>ここに流れる時間が、<br>日々の暮らしをやさしくしてくれます。</p>
+  </section>
+
+  <section class="section about reveal" id="about">
+    <div class="about-copy"><span class="eyebrow">ABOUT US</span><h2>この土地と、<br>食をつなぐ。</h2><p>私たちは、岐阜の自然が育んだ旬の食材を、その季節にいちばんおいしいかたちでお届けしています。つくる人、食べる人、地域の風景がつながる。そんなあたたかい循環を大切に。</p><a class="smallpill" href="#">一緒に育つものこと <span>→</span></a></div>
+    <div class="collage" aria-label="岐阜の食材と自然"><img class="veg" src="https://images.openai.com/static-rsc-4/eq20GxF8-qbWjCH4Ktbtdtz-sNg7N7SaQD8njNfatJMO1VJcDIcXPdbiBaH_OT6qgP3onTTMGpniDeTTuxBgj9fzZEef3HsJ-lXeG7kiCWTpKzc4Xq1r71ZRQYG_cXSq9sPfWM9SHWZZgQQ1c5hcSO1zGcLd5h4CStznn-es00ZFws5RY5xSDDBE2tXBqZvS?purpose=fullsize" alt="旬の野菜"><img src="https://images.openai.com/static-rsc-4/LOggwSgMprxQXnPkEII3JdCoL_NttXRVMTupC8KSgfdZYIwASbFVLnDurAnCx9DTqpQVtmymY-QjtRxA9ALqaL6in9LZFIh8vWE9iX2KAe4GEHAD400sTIP5oFQdfvQCe8xbnkpjReNEpPdM4IaUeiLRPfBssVfE7mUh4bOU5WgErTgOF6eqpZrAM4sCjTTG?purpose=fullsize" alt="草花"><img src="https://images.openai.com/static-rsc-4/GIhb-N3s2MbitkNpGmveChPnJmS13KmjOe0vfLPFo7DJomeiAoywVhiwo-lwn8tk98mCQt4kZ1zqVSs75Qerotq29_0pDrSAYSyEu0NZY55pBQ5mx5OA2sGmRMlvhmOIJhZG_K71ohquuMyqJZOZiNWB4uXUnio8qIwRJlu2MGE4JSSoWco88iHMXZnFU4D2?purpose=fullsize" alt="岐阜の自然"></div>
+  </section>
+
+  <section class="section menu reveal" id="menu">
+    <span class="eyebrow">MENU</span><h2>季節のごはんと、<br>やさしいデザート。</h2>
+    <div class="tabs"><button class="active">ALL</button><button>ごはんもの</button><button>軽食</button><button>デザート</button></div>
+    <p class="menu-lead">岐阜の旬の野菜をたっぷり使った、やさしい味わいのプレートです。</p>
+    <div class="menu-grid"><article><img src="https://images.openai.com/static-rsc-4/POtQJyv54ojW3T_sFiwPfdO81Uox19vx0KhDNIgHjNWmdlN8i0-B9HGXj83To8MNoGUnkzdK0Pa2HO2ANYK4a3Czz9eBI_J9-Euzh_Bz5L-szuB9JNIxPnxgF0yFC8HWM8oAaoHlLeH8lUdJHrSWb97_7r2cFdTpLryrcwC5vZCFR5XxuyNiSEVhUPXQ_6yb?purpose=fullsize" alt="季節の彩りプレート"><h3>季節の彩りプレート <span>›</span></h3><p>岐阜の旬の野菜をたっぷり使った、やさしい味わいのプレートです。</p></article><article><img src="https://images.openai.com/static-rsc-4/hYrLaHVo8EzT0vDuKUCGwFG-397IDDDB4yW01RIlZEcv2V9SqwhGt9lVl_oI3OfyIjnFDHtC3ew3yWTZ4cmR102NpW7O8-mY2MZUn4iFMjgVuVMc1Q1t2sBR-UbvAz4-mggBTJ1VTMgmzAe6kg_9VNC2MqpDzCmtRYGaLOkjlu4dLjfIKrUAyNlrZEwrEW9z?purpose=fullsize" alt="自然光の入るカフェ店内"><h3>カフェで過ごす時間が、<br>日常をちょっと豊かに。</h3><div class="mini-icons"><span>♧<small>季節の食材</small></span><span>☕<small>くつろぎの空間</small></span><span>♧<small>つながるひととき</small></span></div></article></div>
+    <a class="smallpill" href="#">すべてのメニューを見る <span>→</span></a>
+  </section>
+
+  <section class="lower-grid reveal">
+    <div class="scene-block"><span class="eyebrow">SCENE</span><h2>こんな時間を、ここで。</h2><a class="scene-card" href="#" aria-label="ひとりで、ゆっくりと"><img src="https://images.openai.com/static-rsc-4/POtQJyv54ojW3T_sFiwPfdO81Uox19vx0KhDNIgHjNWmdlN8i0-B9HGXj83To8MNoGUnkzdK0Pa2HO2ANYK4a3Czz9eBI_J9-Euzh_Bz5L-szuB9JNIxPnxgF0yFC8HWM8oAaoHlLeH8lUdJHrSWb97_7r2cFdTpLryrcwC5vZCFR5XxuyNiSEVhUPXQ_6yb?purpose=fullsize" alt="ひとりで、ゆっくりと"></a><a class="scene-card" href="#" aria-label="だれかと、たのしく"><img src="https://images.openai.com/static-rsc-4/65j9FSKNXFai11WN8jzZS6ijkT-6vclD0AAU7ekQkG8qvG8GKnfJPqkit0kgh3KXECyvfq8VPkTxjBb2ALXmgFdjnyFP9ewarvATz1_pjTWBieekUI6qffctBym6uKq00lk_rispcuZmRSf5n46u29mksybWAvBnr2R3buqor2wGB46Es4i7z5dVO1YxG9Sp?purpose=fullsize" alt="だれかと、たのしく"></a><a class="scene-card" href="#" aria-label="大切な家族と、いっしょに"><img src="https://images.openai.com/static-rsc-4/hYrLaHVo8EzT0vDuKUCGwFG-397IDDDB4yW01RIlZEcv2V9SqwhGt9lVl_oI3OfyIjnFDHtC3ew3yWTZ4cmR102NpW7O8-mY2MZUn4iFMjgVuVMc1Q1t2sBR-UbvAz4-mggBTJ1VTMgmzAe6kg_9VNC2MqpDzCmtRYGaLOkjlu4dLjfIKrUAyNlrZEwrEW9z?purpose=fullsize" alt="大切な家族と、いっしょに"></a></div>
+    <div class="news-block"><span class="eyebrow">INFORMATION</span><h2>お知らせ</h2><a href="#"><time>2024.07.12</time><span>夏の限定メニューが<br>スタートしました</span></a><a href="#"><time>2024.06.28</time><span>お盆の営業スケジュール<br>のお知らせ</span></a><a href="#"><time>2024.06.12</time><span>季節のスイーツプレート<br>ができました</span></a><a class="more" href="#">お知らせ一覧 →</a></div>
+  </section>
+
+  <section class="access section reveal"><span class="eyebrow">ACCESS</span><h2>また、ここで。</h2><div class="access-visual"><img src="https://images.openai.com/static-rsc-4/GIhb-N3s2MbitkNpGmveChPnJmS13KmjOe0vfLPFo7DJomeiAoywVhiwo-lwn8tk98mCQt4kZ1zqVSs75Qerotq29_0pDrSAYSyEu0NZY55pBQ5mx5OA2sGmRMlvhmOIJhZG_K71ohquuMyqJZOZiNWB4uXUnio8qIwRJlu2MGE4JSSoWco88iHMXZnFU4D2?purpose=fullsize" alt="岐阜の自然"></div><a class="movie-link" href="#">▶　コンセプトムービーを見る　→</a><div class="access-icons"><span>🚗<small>車で15分</small></span><span>🚉<small>最寄り駅から<br>バスで20分</small></span><span>⌖<small>自然に囲まれた<br>ロケーション</small></span></div><a class="smallpill" href="#">アクセスを見る <span>→</span></a></section>
+
+  <section class="final-cta reveal" id="reserve"><img src="https://images.openai.com/static-rsc-4/hYrLaHVo8EzT0vDuKUCGwFG-397IDDDB4yW01RIlZEcv2V9SqwhGt9lVl_oI3OfyIjnFDHtC3ew3yWTZ4cmR102NpW7O8-mY2MZUn4iFMjgVuVMc1Q1t2sBR-UbvAz4-mggBTJ1VTMgmzAe6kg_9VNC2MqpDzCmtRYGaLOkjlu4dLjfIKrUAyNlrZEwrEW9z?purpose=fullsize" alt="緑と自然光に包まれたカフェ"><div class="final-overlay"></div><p>季節のやさしさが、<br>やさしい時間を、<br>つむぎ続けていきます。</p><a class="pill white" href="#">WEBで予約する <span>›</span></a></section>
+
+  <footer class="footer"><nav><a href="#">お知らせ</a><a href="#">よくあるご質問</a><a href="#">店舗情報</a><a href="#">プライバシーポリシー</a><a href="#">採用情報</a></nav><div>◎　⌖</div><p>© 2024 tsumugi. All rights reserved.</p></footer>
+</main>
+
+<div class="drawer" aria-hidden="true"><div class="drawer-panel"><button class="close" aria-label="メニューを閉じる">×</button><span class="eyebrow">MENU</span><a href="#about">ABOUT US</a><a href="#menu">MENU</a><a href="#reserve">WEB予約</a><a href="#">ACCESS</a></div></div>
+<script src="script.js"></script>
+</body>
+</html>
